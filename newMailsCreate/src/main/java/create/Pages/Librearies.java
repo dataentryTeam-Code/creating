@@ -6,8 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Librearies 
 {
-	private static final WebDriver driver = new ChromeDriver();
-	WebDriverWait wait=new WebDriverWait(driver,20);
 	private void waitUntilElementClickable()
 	{
 		
