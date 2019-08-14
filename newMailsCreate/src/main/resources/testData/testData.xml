@@ -1,4 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <loginDetails>
 <userId>abc</userId>
 <password>def</password>
 </loginDetails>
+<url>
+<tempurl>https://www.google.com</tempurl>
+</url>
