@@ -1,5 +1,4 @@
 package create.inProgress;
-import java.io.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -17,8 +16,10 @@ public class CreateMails extends BaseTest
 	{	       
 		System.setProperty("webdriver.chrome.driver","E:\\PersonalFrameWork\\drivers\\win\\76.0.3809.68\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		String url=TestData.getData("//url/tempurl");
-		System.out.print("url");
-		//driver.get(url);
+		String userName=TestData.getData("loginDetails/userId");
+		String password=TestData.getData("loginDetails/password");
+		System.out.println(userName);
+		System.out.println(password);
+		driver.get("https://www.gmail.com");
 	}
 }
