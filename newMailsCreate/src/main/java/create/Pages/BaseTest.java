@@ -8,9 +8,9 @@ public class BaseTest extends Librearies
 {	
 	WebDriver driver=null;
 	public void startBrowser() throws Exception
-	{
-		System.setProperty("webdriver.chrome.driver","E:\\PersonalFrameWork\\drivers\\win\\76.0.3809.68\\chromedriver.exe");	
-		driver=new ChromeDriver();
+	{		
+		properties();
+		driver=obj();
 		driver.manage().timeouts().implicitlyWait(240, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(TestData.getProperties("testData"));			
