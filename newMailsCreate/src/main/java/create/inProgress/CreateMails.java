@@ -1,4 +1,6 @@
 package create.inProgress;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import create.Pages.BaseTest;
 /**********************************************************************************************************
@@ -11,11 +13,11 @@ public class CreateMails extends BaseTest
 	@Test
 	public void create() throws Exception
 	{	       
-		//startBrowser("redifMail");
-		String password=PasswordGenerator();
-		System.out.println(password);
-		String userName=stringGenerator(8);
-		System.out.println(userName);		
+		startBrowser();
+		//String password=PasswordGenerator();
+		//System.out.println(password);
+		//String userName=stringGenerator(8);
+		//System.out.println(userName);	
 		//close();
 	}
 }

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Details>
 <loginDetails>
 <userId>msasikiran225</userId>
 <password>Ms@si27265</password>
-<url>"https://www.google.com"</url>
 </loginDetails>
+<lic>
+//annaya
+<annaya_userId>ravikiran1244</annaya_userId>
+<lic_password>S@siravi225</lic_password>
+<annaya_DOB>05/05/1991</annaya_DOB>
+//myself
+<userId>sasiravimiriyala225@gmail.com</userId>
+<DOB>25/06/1992</DOB>
+//dad
+<dad_userId>ravikiran1244</dad_userId>
+<dad_DOB>05/05/1991</dad_DOB>
+//mummy
+<mom_userId>msasikiran143@gmail.com</mom_userId>
+<mom_DOB>01/01/1973</mom_DOB>
+</lic>
+</Details>

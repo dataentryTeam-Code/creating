@@ -1,13 +1,12 @@
 package create.Pages;
 
-public class Global extends Librearies
+public class Global extends BaseTest
 {
 	public Global clickAccessAuthrizaion()
 	{
 		try
 		{
-			String url=getTestUrl();
-			setCurrentUrl(url);
+			
 		}
 		catch(Exception e)
 		{
@@ -56,6 +55,6 @@ public class Global extends Librearies
 			user.append(characterSetArray[r.nextInt(characterSetArray.length)]);
 		}
 		return user.toString();	
-	}
+	}	
 	
 }

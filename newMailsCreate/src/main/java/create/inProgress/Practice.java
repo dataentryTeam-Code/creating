@@ -58,13 +58,17 @@ public class Practice
 		//Lunch Site
 		driver.get("http://www.gmail.com");		
 		//Login
-		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("msasikiran225");
+		WebElement hi = driver.findElement(By.xpath("//input[@type='email']"));
+		hi.sendKeys("msasikiran225");
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Ms@si2726");
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		//Table all mails in mail box
 		List<WebElement> l=driver.findElements(By.xpath("(//table)[6]/tbody/tr"));
+		
+		WebElement logo = driver.findElement(By.xpath("//a[@href='https://www.bidwarriors.com/' and contains(@class,'navbar-brand')]"));
+		
 		System.out.println("Count no.of mails  "+ l.size());
         int c=0;
         int i=1;
