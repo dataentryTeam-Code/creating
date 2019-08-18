@@ -1,5 +1,4 @@
 package create.Pages;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -35,8 +34,7 @@ public class Librearies //extends Label
 		{
 			OperaOptions c=new OperaOptions();
 			c.setBinary("C:\\Program Files\\Opera\\53.0.2907.99\\opera.exe");
-			System.setProperty("webdriver.opera.driver","H:\\Selenium\\operadriver.exe");
-	        driver=new OperaDriver(c);
+			driver=new OperaDriver(c);
 		}
 		else
 		{

@@ -1,6 +1,7 @@
 package create.Pages;
 
-public class AutomationElement {
+public class AutomationElement extends Librearies
+{
 
 	public AutomationElement(String locator, String descriptionOfElement) {
 		// TODO Auto-generated constructor stub
@@ -13,5 +14,9 @@ public class AutomationElement {
 	public Label newDynamicObject(String logName, String[] replacementString) {
 		return null;
 		
+	}
+	public void element() throws Exception
+	{
+		driver=obj();
 	}
 }
