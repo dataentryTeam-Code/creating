@@ -6,7 +6,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 
-public class Librearies //extends Label
+public class Librearies 
 {
 	public WebDriver driver=null;
 	public void properties() throws Exception 
@@ -42,9 +42,5 @@ public class Librearies //extends Label
 			System.exit(0);
 		}
 		return driver;
-	}
-	public void element() throws Exception 
-	{
-		
 	}
 }
