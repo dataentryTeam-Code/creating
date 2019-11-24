@@ -5,8 +5,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Librearies 
+public class Librearies extends Global
 {
 	public WebDriver driver=null;
 	public void properties() throws Exception 
@@ -42,5 +43,5 @@ public class Librearies
 			System.exit(0);
 		}
 		return driver;
-	}
+	}	
 }
