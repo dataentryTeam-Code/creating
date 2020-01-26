@@ -1,6 +1,6 @@
 package create.Pages;
 
-public class Global 
+public class Global extends Element
 {
 	public Global clickAccessAuthrizaion()
 	{

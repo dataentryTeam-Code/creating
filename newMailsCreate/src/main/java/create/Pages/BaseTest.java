@@ -1,9 +1,14 @@
 package create.Pages;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 public class BaseTest extends Librearies
 {	
-	public WebDriver driver=null;
+	public WebDriver driver;
 	public WebDriver startBrowser() throws Exception
 	{		
 		properties();
@@ -28,5 +33,5 @@ public class BaseTest extends Librearies
 	public void close()
 	{
 		driver.close();
-	}
+	}	
 }
