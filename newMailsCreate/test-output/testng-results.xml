@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27330" started-at="2020-01-26T23:40:43 IST" finished-at="2020-01-26T23:41:10 IST">
+  <suite name="Default suite" duration-ms="38134" started-at="2020-01-27T00:00:12 IST" finished-at="2020-01-27T00:00:50 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27330" started-at="2020-01-26T23:40:43 IST" finished-at="2020-01-26T23:41:10 IST">
+    <test name="Default test" duration-ms="38134" started-at="2020-01-27T00:00:12 IST" finished-at="2020-01-27T00:00:50 IST">
       <class name="create.inProgress.CreateMails">
-        <test-method status="PASS" signature="create()[pri:0, instance:create.inProgress.CreateMails@61f8bee4]" name="create" duration-ms="27166" started-at="2020-01-26T23:40:43 IST" finished-at="2020-01-26T23:41:10 IST">
+        <test-method status="PASS" signature="create()[pri:0, instance:create.inProgress.CreateMails@61f8bee4]" name="create" duration-ms="37831" started-at="2020-01-27T00:00:12 IST" finished-at="2020-01-27T00:00:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
