@@ -1,19 +1,20 @@
 package create.Pages;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
-
-import org.dom4j.Document;
-import org.dom4j.io.SAXReader;
-
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Document;
 public class TestData 
 {
-	public static String getData(String key) throws Exception {
+	public static String getData(String tagName) throws Exception 
+	{
 		File inputFile = new File(System.getProperty("user.dir")+"\\src\\main\\resources\\testData"+"\\NewFile.xml");
-		SAXReader saxReader = new SAXReader();
-		Document document = saxReader.read(inputFile);
-		String output = document.selectSingleNode(key).getText();
+		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+		Document doc = dBuilder.parse(inputFile);
+		doc.getDocumentElement().normalize();
+		String output = doc.getElementsByTagName(tagName).item(0).getTextContent();
 		return output;
 	}
 	public static String getProperties(String key) throws Exception {

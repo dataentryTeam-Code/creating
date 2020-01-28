@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import create.Pages.BaseTest;
 import create.Pages.LicPage;
+import create.Pages.TestData;
 /**********************************************************************************************************
 @Name:-Miriyala Sesikiran
 @Date::-August 14,2019
@@ -16,5 +17,7 @@ public class CreateMails extends BaseTest
 		WebDriver obj=startBrowser();
 		LicPage lic=new LicPage(obj);
 		lic.clickOnRegisteredUser();
+		lic.sendUserName(TestData.getData("mom_userId")).sendPassword(TestData.getData("lic_password"))
+		.sendDOB(TestData.getData("mom_DOB"));
 	}
 }
