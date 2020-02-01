@@ -5,10 +5,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Librearies extends Global
 {
-	public WebDriver driver=null;
+	public WebDriver driver;
+	public WebDriverWait wait;
 	public void properties() throws Exception 
 	{
 		final String key=TestData.getProperties("key");
@@ -43,4 +45,9 @@ public class Librearies extends Global
 		}
 		return driver;
 	}	
+	public WebDriverWait waitUntilvisible(WebDriver value)
+	{
+		wait=new WebDriverWait(value,30);
+		return wait;
+	}
 }

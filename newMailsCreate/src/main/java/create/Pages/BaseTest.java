@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 public class BaseTest extends Librearies
 {	
 	public WebDriver driver;
@@ -34,4 +35,5 @@ public class BaseTest extends Librearies
 	{
 		driver.close();
 	}	
+	
 }

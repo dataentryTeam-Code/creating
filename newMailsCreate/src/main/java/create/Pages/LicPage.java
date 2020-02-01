@@ -21,10 +21,11 @@ public class LicPage extends BaseTest
 	@FindBy(xpath="//input[@name='dob']") WebElement dob;
 	@FindBy(xpath="//span[text()='Sign In']/../../..") WebElement signIn;
 	//methods
-	public void clickOnRegisteredUser() 
+	public LicPage clickOnRegisteredUser() 
 	{
 		//wait.until(ExpectedConditions.elementToBeClickable(registeredUser));
 		registeredUser.click();
+		return this;
 	}
 
 	public LicPage sendUserName(String value) 
