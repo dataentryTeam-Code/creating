@@ -2,11 +2,9 @@ package create.inProgress;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import create.Pages.BaseTest;
-import create.Pages.LicPage;
-import create.Pages.TestData;
 /**********************************************************************************************************
 @Name:-Miriyala Sesikiran
-@Date::-August 14,2019
+@Date::-Feb 07,2020
 @Purpous:- create Mails
 **********************************************************************************************************/
 public class CreateMails extends BaseTest 
@@ -21,5 +19,6 @@ public class CreateMails extends BaseTest
 		rediff.fullName(FullName).chooseMail(FullName);
 		String password=PasswordGenerator();
 		rediff.choosePassword(password);
+		String ocr=rediff.getText();
 	}
 }
