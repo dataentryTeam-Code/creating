@@ -14,7 +14,6 @@ public class DadLic extends BaseTest
 	@Test
 	public void create() throws Exception
 	{	
-		//Dad lic script
 		WebDriver obj=startBrowser();
 		LicPage lic=new LicPage(obj);
 		lic.clickOnRegisteredUser();
