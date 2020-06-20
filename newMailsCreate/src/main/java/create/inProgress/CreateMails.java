@@ -12,6 +12,7 @@ public class CreateMails extends BaseTest
 	@Test
 	public void create() throws Exception
 	{	
+		//to check git hub
 		WebDriver obj=startBrowser();
 		wait=waitUntilvisible(obj);
 		RediffMail rediff=new RediffMail(obj);
